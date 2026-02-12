@@ -174,3 +174,13 @@ export interface IAuthProviderProps {
 export interface IPaymentProps {
     total: number;
 }
+
+export interface ICheckoutItem {
+    title: string;
+    price: string;
+    quantity: number;
+}
+
+export interface ICheckoutResponse {
+    url: string;
+}
