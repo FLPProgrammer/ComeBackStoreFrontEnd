@@ -10,6 +10,7 @@ export function Register() {
     password,
     confirmPassword,
     loading,
+    error,
     setName,
     setEmail,
     setPassword,
@@ -33,6 +34,7 @@ export function Register() {
       <Input type="password" placeholder="Senha" value={password} onChange={(e) => setPassword(e.target.value)} />
       <Input type="password" placeholder="Confirme a senha" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} />
 
+      {error && <p style={{ color: 'red'}}>{error}</p>}
       <Button onClick={handleRegister} disabled={loading}>
         {loading ? 'Criando...' : 'Criar Conta'}
       </Button>
