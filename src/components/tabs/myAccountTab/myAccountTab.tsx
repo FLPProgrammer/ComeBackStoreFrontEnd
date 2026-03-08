@@ -2,7 +2,7 @@ import { Container } from './styles';
 import { useMyAccountTab } from '../../../hooks/useMyAccountTab';
 
 
-export function MyAccountTab() {
+export function MyAccountTab(){
 
     const {
       name,

@@ -5,7 +5,7 @@ import { OrdersTab } from '../../components/tabs/ordersTab/ordersTab';
 import { WishlistTab } from '../../components/tabs/wishlistTab/wishlistTab';
 import { ChangePasswordTab } from '../../components/tabs/changePasswordTab/changePasswordTab'
 
-export function AccountContent({ activeTab, onChangeTab }: IAccountContentProps) {
+export function AccountContent({ activeTab }: IAccountContentProps) {
   switch (activeTab) {
     case 'orders':
       return <OrdersTab />;
@@ -17,8 +17,6 @@ export function AccountContent({ activeTab, onChangeTab }: IAccountContentProps)
         return <ChangePasswordTab />
 
     default:
-      return <MyAccountTab
-          onChangePassword={() => onChangeTab('change-password')}
-       />;
+      return <MyAccountTab />;
   }
 }
