@@ -89,7 +89,9 @@ export function CategoryBar() {
         </MenuItem>
 
         <MenuItem>
-          TODOS OS JOGOS XBOX
+          <CategoryLink to='/categoria/all'>
+            TODOS OS JOGOS XBOX
+          </CategoryLink>
           <Dropdown small>
             <DropdownColumn>
               <li>

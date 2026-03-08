@@ -1,3 +1,4 @@
+import { ScrollToTop } from '../../components/scrollToTop/scrollToTop'
 import { Outlet } from 'react-router-dom';
 import { Header } from '../../components/header/header';
 import { InfoBar } from '../../components/infoBar/infoBar';
@@ -7,6 +8,8 @@ import { Footer } from '../../components/footer/footer';
 export function AllCategoryLayout() {
     return (
          <>
+        <ScrollToTop />
+
          <Header />
          <InfoBar />
 

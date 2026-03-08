@@ -18,15 +18,18 @@ export function RelatedGames({ game }: IRelatedGamesProps) {
             <h1>Produtos Relacionados</h1>
 
             <Swiper
-            modules={[Navigation]}
-            navigation
-            spaceBetween={24}
-            slidesPerView={4}
-            breakpoints={{
-                320: { slidesPerView: 1.2},
-                640: { slidesPerView: 2.2},
-                1024: { slidesPerView: 4},
-            }}
+                modules={[Navigation]}
+                navigation
+                spaceBetween={24}
+                slidesPerView={4}
+                preventClicks={true}
+                preventClicksPropagation={true}
+                slideToClickedSlide={false}
+                breakpoints={{
+                    320: { slidesPerView: 1.2 },
+                    640: { slidesPerView: 2.2 },
+                    1024: { slidesPerView: 4 },
+                }}
             >
                  {relatedGames.map((relatedGame) => (
                     <SwiperSlide key={relatedGame.id}>
