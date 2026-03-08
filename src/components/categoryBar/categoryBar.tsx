@@ -1,6 +1,7 @@
 import { Container, Menu, MenuItem, Dropdown, DropdownColumn, CategoryLink } from './styles';
 import { useHideOnScroll } from '../../hooks/useHideOnScroll';
 
+
 export function CategoryBar() {
 
   const { hidden } = useHideOnScroll({
@@ -8,11 +9,15 @@ export function CategoryBar() {
     threshold: 10
   });
 
+
+
   return (
     <Container hidden={hidden}>
       <Menu>
         <MenuItem>
-          CATEGORIAS
+          <CategoryLink to="/#categories">
+            CATEGORIAS 
+          </CategoryLink>
           <Dropdown>
             <DropdownColumn>
               <li>

@@ -9,7 +9,7 @@ import "swiper/css/navigation";
 
 export function FeaturedCategories() {
   return (
-    <Container>
+    <Container id="categories">
       <h1>Categorias em Destaque</h1>
 
       <Swiper
