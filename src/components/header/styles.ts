@@ -132,7 +132,7 @@ export const AtendimentoDropdown = styled.div`
 
   @media (max-width: 480px) {
     width: calc(100vw - 2rem);
-    right: -1rem;
+    right: -3rem;
     left: auto;
   }
 `;
@@ -148,6 +148,10 @@ export const DropdownItem = styled.div`
   cursor: pointer;
 
   transition: 0.2s ease;
+
+
+  width: 100%;
+  box-sizing: border-box;
 
   &:hover {
     background: #f3e8ff;
@@ -172,15 +176,35 @@ export const TextBox = styled.div`
   flex-direction: column;
   gap: 2px;
 
+
+  flex: 1;
+  min-width: 0;
+
   strong {
     font-size: 13px;
     font-weight: 700;
     color: #111;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
   }
 
   span {
     font-size: 12px;
     color: #666;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+
+  @media (max-width: 480px) {
+    strong {
+      font-size: 12px;
+    }
+
+    span {
+      font-size: 11px;
+    }
   }
 `;
 
