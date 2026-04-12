@@ -1,7 +1,6 @@
 # 🎮 GameStore Frontend
 
-Frontend de um e-commerce moderno desenvolvido com **React + TypeScript**, focado em arquitetura limpa, separação de responsabilidades e experiência premium de usuário.
-
+Frontend de um e-commerce moderno desenvolvido com **React + TypeScript**, focado em arquitetura limpa, separação de responsabilidades.
 Este projeto faz parte de uma aplicação fullstack, consumindo uma API Node.js com autenticação via JWT (cookie httpOnly).
 
 ---
